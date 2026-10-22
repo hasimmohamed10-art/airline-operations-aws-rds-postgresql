@@ -359,7 +359,7 @@ Supporting evidence is stored in the `screenshots/` directory.
 | `29-rds-replica-ssl-connection.png` | SSL/TLS connection and replica validation |
 | `30-rds-replica-table-validation.png` | Table and row-count validation |
 | `31-rds-primary-replication-test-cleanup.png` | Primary-side test insert and delete commands |
-| `32-rds-replication-test-validation.png` | Test row appeared on the replica and disappeared after the delete replicated |
+| `32-rds-replica-replication-validation.png` | Test row appeared on the replica and disappeared after the delete replicated |
 
 Review screenshots before publishing. Hide account identifiers, private endpoints, KMS key IDs, and other sensitive AWS console information.
 
