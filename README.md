@@ -128,7 +128,7 @@ Created a same-Region read replica in Sydney. Validated its PostgreSQL recovery 
 
 A separate attempt to create a cross-Region replica in Hyderabad encountered a KMS security-token error. Hyderabad replication was not completed, and the root cause was not confirmed.
 
-**Resource cleanup note:** Verify the current deletion status of `airline-sydney-replica` and the temporary PITR recovery instance in the AWS Console before considering cleanup complete. Keep the primary `database-1` unless there is a deliberate reason to remove it.
+**Resource cleanup:** Only the primary RDS DB instance, `database-1`, is retained. The temporary instances `airline-sydney-replica`, `airline-pitr-recovery`, and `airline-restore-from-snapshot` have been deleted. The manual snapshot `airline-lab5-manual-snapshot` was also deleted after recovery validation.
 
 ## Documentation Structure
 
@@ -239,7 +239,7 @@ The documentation separates completed tests from uncompleted configurations and 
 **Mohamed Hasim Badhusha S**  
 PostgreSQL DBA | Database Reliability Engineer
 
-- **LinkedIn:** [Mohamed Hasim Badhusha S.](https://www.linkedin.com/in/mohamed-hasim-badhusha-s-ab386a35a/)
+- **LinkedIn:** [Mohamed Hasim Badhusha S](https://www.linkedin.com/in/mohamed-hasim-badhusha-s-ab386a35a/)
 - **GitHub:** [hasimmohamed10-art](https://github.com/hasimmohamed10-art)
-- **Gmail:** [Contact by email](mailto:hasimmohamed10@gmail.com)
+- **Gmail:** [hasimmohamed10@gmail.com](mailto:hasimmohamed10@gmail.com)
 
